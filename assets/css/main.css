@@ -35,19 +35,36 @@
 
 /* OVERALL ASPECT */
 
+div.affix {
+   top: 50px;
+}
+
 body {
-  background-color: #f2f2f2;
-  background-color: white;
-  
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
+    position: relative;
+
+    padding-top: 50px;
+    
+    background-color: #f2f2f2;
+    background-color: white;
+    
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Titles */
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     font-family: "Raleway";
     font-weight: 300;
     color: #333;
+}
+
+h3, h4 {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 1.7em;
+    color: #3b225d;
+    line-height: 1.5em;
+    margin-bottom: 1em;
 }
 
 
@@ -66,15 +83,36 @@ p {
     line-height: 1.5em;;
 }
 
-.leader {
-    font-weight: bold;
-    font-size: 1.6em;
-    color: #3b225d
+footer {
+    margin-top: 3em;
+    padding: 1em 0 0;
+    background: #2b2b2b;
+    font-size: 0.9em;
 }
 
-.introduction {
-  padding-top: 0.5em;
+footer p {
+    color: #bdbdbd;
 }
+
+footer i {
+    color: #bdbdbd;
+    font-size: 2em;
+    padding: 1em 0.5em;
+}
+
+footer i:hover {
+    color: #dbd7ff;
+}
+
+footer a {
+    color: #888;
+}
+
+footer a:hover {
+    color: #dbd7ff;
+}
+
+
 
 .centered {
     text-align: center;
@@ -113,8 +151,6 @@ a {
 
 /* side list elements if required */
 .navigation ul {
-    font-family: "Raleway"
-    font-weight: 700;
     list-style-type: none;
     margin: 0;
     padding: 0; 
@@ -125,10 +161,11 @@ a {
     display: block;
     border: 0;
     font-size: 1.2em;
+    font-weight: bold;
 }
 .navigation ul li a:link, ul li a:visited {
     color: #3b225d;
-    text-align: center;
+    text-align: left;
     padding: 0.5em 5% 0.5em 5%;
     margin-top: 10px;
     background-color: #dbd7ff;
@@ -163,32 +200,9 @@ hr {
 
 
 .navbar {
-	font-weight: 800;
-	font-size: 14px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-.navbar-inverse {
-	background: #2d2d2d;
-	border-color: #2d2d2d;
-}
-
-.navbar-inverse .navbar-nav > .active > a {
-	background: #ff7878
-}
-
-.navbar-inverse .navbar-brand {
-	color: #999999;
-	font-weight: bolder;
-	font-size: 22px;
-	letter-spacing: 1px;
-}
-
-.navbar-inverse .navbar-brand i {
-	color: #ff7878;
-	font-size: 22px;
-	letter-spacing: 1px;
+    background-color: white;
+    font-weight: 800;
+    font-size: 1em;;
 }
 
 /*TILT*/
