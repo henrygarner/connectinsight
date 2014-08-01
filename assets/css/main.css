@@ -11,19 +11,36 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
 
+@font-face {
+    font-family: 'Skysans-medium';
+    src: url('../fonts/skysans-medium-webfont.eot');
+    src: url('../fonts/skysans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/skysans-medium-webfont.woff') format('woff'),
+         url('../fonts/skysans-medium-webfont.ttf') format('truetype'),
+         url('../fonts/skysans-medium-webfont.svg#sky_sansmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Skysans-book';
+    src: url('../fonts/skysans-book-webfont.eot');
+    src: url('../fonts/skysans-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/skysans-book-webfont.woff') format('woff'),
+         url('../fonts/skysans-book-webfont.ttf') format('truetype'),
+         url('../fonts/skysans-book-webfont.svg#sky_sansmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* OVERALL ASPECT */
 
 body {
   background-color: #f2f2f2;
-    font-family: "Lato";
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
-
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-    
-    margin-top: 70px;
+  background-color: white;
+  
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Titles */
@@ -35,9 +52,28 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Paragraph & Typographic */
+p, li, a {
+    font-family: "Lato";
+    color: #555;
+}
+
+li {
+    font-size: 1.4em;
+}
+
 p {
-    line-height: 28px;
-    margin-bottom: 25px;
+    font-size: 1.4em;
+    line-height: 1.5em;;
+}
+
+.leader {
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #3b225d
+}
+
+.introduction {
+  padding-top: 0.5em;
 }
 
 .centered {
@@ -46,7 +82,6 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -72,7 +107,52 @@ a:after {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
- hr {
+a {
+    text-decoration: none;
+}
+
+/* side list elements if required */
+.navigation ul {
+    font-family: "Raleway"
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    width: 100%;
+}
+.navigation ul li {
+    margin: 0.5em 0;
+    display: block;
+    border: 0;
+    font-size: 1.2em;
+}
+.navigation ul li a:link, ul li a:visited {
+    color: #3b225d;
+    text-align: center;
+    padding: 0.5em 5% 0.5em 5%;
+    margin-top: 10px;
+    background-color: #dbd7ff;
+    display: block;
+    -moz-border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    -o-border-radius: 0.4em;
+    -ms-border-radius: 0.4em;
+    border-radius: 0.4em;
+}
+.navigation ul li a:hover {
+    color: #fff;
+    background-color: #3b225d;
+}
+
+.navigation ul ul li {
+    border-bottom: none; 
+    padding-left: 1em;
+    font-size: 1em;
+    display: block;
+}
+
+
+hr {
     display: block;
     height: 1px;
     border: 0;
@@ -167,6 +247,51 @@ a:after {
 	font-weight: 700;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+}
+
+/* Title */
+
+#title {
+    background: url('../images/header-bg.jpg') no-repeat center top;
+    text-align:center;
+    padding-top: 20px;
+    min-height: 350px;
+    background-position: center center;
+    width: 100%;
+    opacity: 0.85;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    padding-top: 80px;
+}
+
+#title h1 {
+    color: white;
+    font-size: 6em;
+}
+
+#title h1 span.connect {
+    font-family: "Skysans-book";
+}
+
+#title h1 span.insight {
+    font-family: "Skysans-medium";
+}
+
+#title h2 {
+    padding-top: 20px;
+    font-family: "Raleway";
+    color: white;
+    font-size: 2.5em;
+    line-height: 1.5em;
 }
 
 /* Dark Grey Wrap */
@@ -313,205 +438,6 @@ a:after {
 	margin-top: 0px; 
 }
 
-/* ==========================================================================
-   Pricing Tables
-   ========================================================================== */
-   
-.pricing-option {
-    padding-bottom: 40px;
-}
-
-.pricing-option .pricing-top {
-    position: relative;
-    background: #222;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-
-    padding: 40px 20px 30px 20px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.pricing-option .pricing-top .special-label {
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #1abc9c;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 3px 0;
-}
-
-.special .pricing-top {
-    background: black;
-}
-
-.pricing-option .pricing-edition {
-    text-transform: uppercase;
-    display: block;
-    font-size: 25px;
-    letter-spacing: 8px;
-}
-
-.pricing-option .price {
-    display: inline-block;
-    position: relative;
-}
-
-.pricing-option .price sup {
-    position: absolute;
-    top: 50px;
-    left: -10px;
-    font-size: 24px;
-}
-
-.pricing-option .price .price-amount {
-    font-size: 108px;
-    letter-spacing: -4px;
-}
-
-.pricing-option .price small {
-    position: relative;
-    left: -10px;
-    font-size: 18px;
-}
-
-.pricing-option ul {
-    list-style: none;
-    margin: 0;
-    background: #eee;
-    text-align: center;
-    padding-left: 0px;
-}
-
-.pricing-option ul li {
-    border-bottom: solid 1px #e1e1e1;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.pricing-option .pricing-signup {
-    display: block;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px 10px;
-    color: white;
-    background: #1abc9c;
-}
-
-.pricing-option .pricing-signup:hover {
-    background: #ff7878;
-}
-
-
-/* ==========================================================================
-   Blog Configuration
-   ========================================================================== */
-
-
-/* Blog Page Zones & Conf*/
-
-.main-blog {
-	padding-top: 90px;
-}
-
-.blog-date {
-	display: block;
-	padding-top: 40px;
-}
-
-.blog-date p {
-	text-align: right;
-	margin-right: 10px;
-	font-size: 13px;
-	letter-spacing: 1px;
-}
-
-.blog-date h6 {
-	font-weight: 800;
-	text-align: right;
-	margin-right: 10px;
-	letter-spacing: 1px;
-}
-
-.blog-title {
-	padding-top: 40px;
-	margin-bottom: 20px;
-}
-
-.blog-title h2 {
-	margin-top: 0px;
-	font-size: 40px;
-	line-height: 50px;
-	letter-spacing: 3px;
-	text-align: left;
-	font-weight: 400;
-	margin-left: 5px;
-}
-
-.blog-post {
-	text-align: left;
-	margin-right: 0px;
-	font-size: 16px;
-}
-
-.blog-post h2 {
-	margin-top: 0px;
-	font-size: 40px;
-	line-height: 50px;
-	letter-spacing: 3px;
-	text-align: left;
-	font-weight: 400;
-	width: 100%;
-	padding-top: 40px;
-	margin-bottom: 20px;
-}
-
-
-.blog-post em {
-	text-align: left;
-	font-size: 22px;
-	color: #767676;	
-}
-
-.blog-post i {
-	letter-spacing: 10px;
-}
-
-.blog-post p {
-	margin-bottom: 20px;
-}
-
-.blog-post blockquote {
-  padding: 0 0 0 15px;
-  margin: 0 0 20px;
-  border-left: 4px solid #f1c40f;
-  color: #a7a7a7;
-  font-size: 19px;
-}
-
-.blog-post tag {
-	color: #a7a7a7;
-	font-size: 14px;
-	letter-spacing: 2px;
-}
-
-.blog-post h4 {
-	margin-top: 0px;
-	font-size: 19px;
-	line-height: 30px;
-	letter-spacing: 1px;
-	text-align: left;
-	font-weight: 700;
-}
-
-/* ========== SIDEBAR CONF ========== */
 
 .sidebar-zone {
 	padding-top: 40px;
