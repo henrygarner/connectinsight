@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+@background-color: #eee;
+@light-purple-color: #dbd7ff;
+@purple-color: #3b225d;
+
+
+body {
+    padding-top: 50px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    background-color: white;
+
+    font-family: "Lato";
+}
+
+h3, h5 {
+    color: @purple-color;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;;
+    margin-bottom: 1em;
+}
+
+a:hover {
+    color: @purple-color;
+}
+
+.centered {
+    text-align: center;
+}
+
+#logo {
+    padding: 40px 0 50px;
+    img {
+        max-width: 600px;
+        width: 100%;
+    }
+}
+
+#leader {
+    background-color: #eee;
+    background-image: linear-gradient(rgb(219, 219, 219) 0px,rgb(238, 238, 238) 100%);
+    background-repeat: repeat-x;
+    padding-bottom: 2em;
+}
+
+div.nav {
+    margin-top: 1em;
+}
+
+.navbar-nav > li > a {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 1em;
+    color: @purple-color;
+}
+
+.nav-pills > li {
+    margin-bottom: 4px;
+}
+
+.nav-pills > li > a {
+    font-weight: bold;
+    color: @purple-color;
+    background-color: @light-purple-color;
+}
+
+.nav-pills > li > a:hover {
+    color: white;
+    background-color: @purple-color;
+}
+
+section.client, #about {
+    padding: 2em 0 3em;
+    h3 {
+        color: @purple-color;
+    }
+    
+}
+
+#strapline, .strands {
+    color: white;
+    font-family: "Raleway";
+    background: url('../images/bg-purple.jpg') no-repeat center top;
+    background-position: center center;
+    padding-bottom: 1em;
+    
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    h2 {
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+    h4 {
+        font-weight: 600;
+        line-height: 1.5em;
+    }
+    i {
+        font-size: 2em;
+    }   
+}
+
+.strands {
+    padding-top: 1.5em;
+}
+
+footer {
+    background: #bdbdbd;
+    background-image: linear-gradient(rgb(238, 238, 238) 0px,rgb(245, 245, 245) 100%);
+    background-repeat: repeat-x;
+
+    padding-top: 1em;
+    i {
+        padding: 1em 0.5em 0.5em;
+        font-size: 2em;
+        color: #777;
+    }
+    i:hover {
+        color: @purple-color;
+    }
+}
+
+img.helen {
+    float: right;
+}

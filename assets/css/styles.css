@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+body {
+  padding-top: 50px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  background-color: white;
+  font-family: "Lato";
+}
+h3,
+h5 {
+  color: #3b225d;
+  margin-bottom: 1em;
+}
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+a:hover {
+  color: #3b225d;
+}
+.centered {
+  text-align: center;
+}
+#logo {
+  padding: 40px 0 50px;
+}
+#logo img {
+  max-width: 600px;
+  width: 100%;
+}
+#leader {
+  background-color: #eee;
+  background-image: linear-gradient(#dbdbdb 0px, #eeeeee 100%);
+  background-repeat: repeat-x;
+  padding-bottom: 2em;
+}
+div.nav {
+  margin-top: 1em;
+}
+.navbar-nav > li > a {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 1em;
+  color: #3b225d;
+}
+.nav-pills > li {
+  margin-bottom: 4px;
+}
+.nav-pills > li > a {
+  font-weight: bold;
+  color: #3b225d;
+  background-color: #dbd7ff;
+}
+.nav-pills > li > a:hover {
+  color: white;
+  background-color: #3b225d;
+}
+section.client,
+#about {
+  padding: 2em 0 3em;
+}
+section.client h3,
+#about h3 {
+  color: #3b225d;
+}
+#strapline,
+.strands {
+  color: white;
+  font-family: "Raleway";
+  background: url('../images/bg-purple.jpg') no-repeat center top;
+  background-position: center center;
+  padding-bottom: 1em;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#strapline h2,
+.strands h2 {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+#strapline h4,
+.strands h4 {
+  font-weight: 600;
+  line-height: 1.5em;
+}
+#strapline i,
+.strands i {
+  font-size: 2em;
+}
+.strands {
+  padding-top: 1.5em;
+}
+footer {
+  background: #bdbdbd;
+  background-image: linear-gradient(#eeeeee 0px, #f5f5f5 100%);
+  background-repeat: repeat-x;
+  padding-top: 1em;
+}
+footer i {
+  padding: 1em 0.5em 0.5em;
+  font-size: 2em;
+  color: #777;
+}
+footer i:hover {
+  color: #3b225d;
+}
+img.helen {
+  float: right;
+}
