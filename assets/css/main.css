@@ -76,6 +76,9 @@ h3, h4 {
     margin-bottom: 1em;
 }
 
+img.helen {
+    float: right;
+}
 
 /* Paragraph & Typographic */
 p, li, a {
@@ -90,6 +93,7 @@ li {
 p {
     font-size: 1.4em;
     line-height: 1.5em;;
+    margin-bottom: 1em;
 }
 
 footer {
