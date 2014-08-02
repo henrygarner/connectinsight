@@ -10,7 +10,7 @@ body {
 }
 h3,
 h5 {
-  color: #3b225d;
+  color: #3e296e;
   margin-bottom: 1em;
 }
 p {
@@ -19,7 +19,7 @@ p {
   margin-bottom: 1em;
 }
 a:hover {
-  color: #3b225d;
+  color: #3e296e;
 }
 .centered {
   text-align: center;
@@ -47,27 +47,29 @@ div.nav {
   font-family: "Lato";
   font-weight: bold;
   font-size: 1em;
-  color: #3b225d;
+  color: #3e296e;
 }
 .nav-pills > li {
   margin-bottom: 4px;
 }
 .nav-pills > li > a {
   font-weight: bold;
-  color: #3b225d;
+  color: #3e296e;
   background-color: #dbd7ff;
 }
 .nav-pills > li > a:hover {
   color: white;
-  background-color: #3b225d;
+  background-color: #3e296e;
 }
 section.client,
 #about {
-  padding: 2em 0 3em;
+  padding-top: 70px;
+  margin-top: -50px;
+  padding-bottom: 3em;
 }
 section.client h3,
 #about h3 {
-  color: #3b225d;
+  color: #3e296e;
 }
 #strapline,
 .strands {
@@ -115,5 +117,5 @@ footer i {
   color: #777;
 }
 footer i:hover {
-  color: #3b225d;
+  color: #3e296e;
 }
