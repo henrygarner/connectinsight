@@ -277,7 +277,6 @@ hr {
     padding-bottom: 20px;
     background-position: center center;
     width: 100%;
-    opacity: 0.85;
 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -306,6 +305,10 @@ hr {
     width: 100%;
 }
 
+#leader {
+    background-color: #eee;
+    padding: 1em 0 3em 0;
+}
 
 #startups-strands, #sales-strands
 {

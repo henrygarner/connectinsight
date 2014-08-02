@@ -12,6 +12,7 @@
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
         <link href="./assets/css/main.css" rel="stylesheet">
+        <link href="./assets/css/animate.css" rel="stylesheet">
         
     </head>
     <body>
@@ -55,8 +56,8 @@
 	</div>
       </section>
       
-
-      <div class="container w">
+      <section id="leader">
+        <div class="container">
 	<div class="row">
 	  <div class="col-lg-8">
             <h3>We deliver the information you need to confidently make
@@ -74,7 +75,7 @@
 
           <div class="col-lg-4">
             <div class="navigation">
-              <p>How we help</p>
+              <h5>How we help</h5>
               <ul>
                 <li><a href="#startups">Startups &amp; Investors</a></li>
                 <li><a href="#agencies">Marketers &amp; Agencies</a></li>
@@ -86,11 +87,13 @@
           </div>
 	</div>
       </div>
+      </section>
+      
 
       <section id="startups">
         <div class="container wb">
-	<div class="row">
-	  <div class="col-lg-8">
+	<div class="row centered">
+	  <div class="col-lg-8 col-lg-offset-2">
             <h3>Startups &amp; Investors</h3>
 
             <p>If you run a start up or invest in them you will be
@@ -111,11 +114,17 @@
 	</div>
         </div>
       </section>
+
+
       <section id="startups-strands" class="strands">
         <div class="row centered">
           <div class="col-lg-4">
-            <i class="fa fa-search-plus"></i>
-            <h4>Market due diligence</h4>
+            <div class="wow fadeInUp showDelay2 animated"  
+                 style="visibility: visible; -webkit-animation: fadeInUp;"
+                 data-wow-delay="2s">
+              <i class="fa fa-search-plus"></i>
+              <h4>Market due diligence</h4>
+            </div>
           </div>
           <div class="col-lg-4">
             <i class="fa fa-check"></i>
@@ -140,8 +149,8 @@
       
       <section id="agencies">
         <div class="container wb">
-	<div class="row">
-	  <div class="col-lg-8">
+	<div class="row centered">
+	  <div class="col-lg-8 col-lg-offset-2">
             <h3>Marketers &amp; Agencies</h3>
 
             <p>The digital marketing mix can always be improved, and
@@ -174,8 +183,8 @@
 
       <section id="sales">
         <div class="container wb">
-	<div class="row">
-	  <div class="col-lg-8">
+	<div class="row centered">
+	  <div class="col-lg-8 col-lg-offset-2">
             <h3>Business Development &amp; Sales Teams</h3>
 
             <p>After working in digital media sales for 15 years, we
@@ -222,8 +231,8 @@
 
       <section id="brands">
         <div class="container wb">
-	  <div class="row">
-	    <div class="col-lg-8">
+	  <div class="row centered">
+	    <div class="col-lg-8 col-lg-offset-2">
               <h3>Digital Brands &amp; Publishers</h3>
               
               <p>Existing audience measures don’t always answer the
@@ -258,23 +267,6 @@
         </div>
       </section>
 
-
-      <section id="about">
-        <div class="container wb">
-          <div class="row">
-            <div class="col-lg-8">
-              <h3>About Connect Insight</h3>
-
-              <p>Connect Insight was founded by Helen Gawor. Helen has been at the forefront of digital marketing and media strategy for over 12 years. Helen was Head of Commercial Strategy at Orange when she left the company in 2006, after growing the division for more than 6 years (previously branded as Freeserve then Wanadoo). She was responsible for media research, trade marketing and PR, and sales strategy.
-</p>
-              <p>Helen has been nominated for 6 industry awards for ground breaking digital consumer insight and won a Campaign Media Award for Best Research for her work into how online ad formats appeal to different audiences. At Orange she lead many relevant industry committees, and as a consultant has worked as an advisor to the World Federation of Advertisers on young people and digital issues.</p>
-              <p>As a Digital Strategy Consultant, Helen has taken her mantra of making insight accessible, contributing to strategy and revenue generation to her new clients. Connect Insight’s clients have included Jaguar, Debenhams and American Express, as well as a number of creative and brand agencies, publishers/media businesses and social media consultancies. She is also currently working at board level with innovative digital start-ups and their investors.</p>
-              
-            </div>
-          </div>
-        </div>
-      </section>
-
       <footer>
         <div class="container">
           <div class="row centered">
@@ -299,6 +291,7 @@
       
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-      
+      <script src="assets/js/wow.min.js"></script>
+      <script>new WOW().init();</script>
     </body>
 </htmh3>
