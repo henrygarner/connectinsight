@@ -58,6 +58,12 @@ h1, h2 {
     color: #333;
 }
 
+span.insight {
+    padding-top: 30px;
+    padding-right: 60px;
+    background: url(../images/connectinsight-icon-large.png) no-repeat top right;
+}
+
 h3, h4 {
     font-family: "Lato";
     font-weight: 700;
