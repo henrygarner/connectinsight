@@ -37,6 +37,9 @@ a:hover {
   background-repeat: repeat-x;
   padding: 0.5em 0 3em;
 }
+#leader h3 {
+  line-height: 1.3em;
+}
 div.nav {
   margin-top: 1em;
 }
