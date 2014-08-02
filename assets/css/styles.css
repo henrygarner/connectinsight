@@ -35,7 +35,7 @@ a:hover {
   background-color: #eee;
   background-image: linear-gradient(#dbdbdb 0px, #eeeeee 100%);
   background-repeat: repeat-x;
-  padding-bottom: 2em;
+  padding: 0.5em 0 3em;
 }
 div.nav {
   margin-top: 1em;
