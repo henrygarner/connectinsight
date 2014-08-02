@@ -307,26 +307,27 @@ hr {
 }
 
 
-#startups-strands {
-    background: url('../images/bg-green.jpg') no-repeat center top;
-    text-align:center;
-    padding-bottom: 20px;
-    background-position: center center;
-    width: 100%;
-    opacity: 0.85;
+#startups-strands, #sales-strands
+{
+ background: url('../images/bg-green.jpg') no-repeat center top;
+ text-align:center;
+ padding-bottom: 20px;
+ background-position: center center;
+ width: 100%;
+ opacity: 0.85;
 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+ -webkit-background-size: 100%;
+ -moz-background-size: 100%;
+ -o-background-size: 100%;
+ background-size: 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ }
 
-#agencies-strands {
+#agencies-strands, #brands-strands {
     background: url('../images/bg-yellow.jpg') no-repeat center top;
     text-align:center;
     padding-bottom: 20px;
