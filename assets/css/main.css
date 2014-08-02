@@ -272,7 +272,7 @@ hr {
 /* Title */
 
 #strapline {
-    background: url('../images/header-bg.jpg') no-repeat center top;
+    background: url('../images/bg-purple.jpg') no-repeat center top;
     text-align:center;
     padding-bottom: 20px;
     background-position: center center;
@@ -312,7 +312,7 @@ hr {
 
 #startups-strands, #sales-strands
 {
- background: url('../images/bg-green.jpg') no-repeat center top;
+ background: url('../images/bg-purple.jpg') no-repeat center top;
  text-align:center;
  padding-bottom: 20px;
  background-position: center center;
@@ -331,7 +331,7 @@ hr {
  }
 
 #agencies-strands, #brands-strands {
-    background: url('../images/bg-yellow.jpg') no-repeat center top;
+    background: url('../images/bg-purple.jpg') no-repeat center top;
     text-align:center;
     padding-bottom: 20px;
     background-position: center center;
