@@ -64,7 +64,7 @@ span.insight {
 }
 
 h3, h4 {
-    font-family: "Raleway";
+    font-family: "Lato";
     font-weight: 700;
     font-size: 1.7em;
     color: #3b225d;
@@ -75,7 +75,7 @@ h3, h4 {
 
 /* Paragraph & Typographic */
 p, li, a {
-    font-family: "Raleway";
+    font-family: "Lato";
     color: #555;
 }
 
@@ -498,7 +498,7 @@ hr {
 
 .modal-body {
 	background: #f2f2f2;
-    font-family: "Raleway";
+    font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
     color: #555;
