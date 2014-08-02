@@ -306,17 +306,60 @@ hr {
     width: 100%;
 }
 
-#title h1 {
+
+#startups-strands {
+    background: url('../images/bg-green.jpg') no-repeat center top;
+    text-align:center;
+    padding-bottom: 20px;
+    background-position: center center;
+    width: 100%;
+    opacity: 0.85;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#agencies-strands {
+    background: url('../images/bg-yellow.jpg') no-repeat center top;
+    text-align:center;
+    padding-bottom: 20px;
+    background-position: center center;
+    width: 100%;
+    opacity: 0.85;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+.strands {
+    padding-top: 2em;
+    margin-top: 5em;
     color: white;
-    font-size: 6em;
+    font-family: "Raleway";
 }
 
-#title h1 span.connect {
-    font-family: "Skysans-book";
+.strands h4 {
+    color: white;
 }
 
-#title h1 span.insight {
-    font-family: "Skysans-medium";
+.strands i {
+    font-size: 2.5em;
 }
 
 /* Dark Grey Wrap */
