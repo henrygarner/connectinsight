@@ -32,6 +32,10 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+            
+            <a href="index.html" class="logo" title="Home">
+              <img src="assets/images/connectinsight-logo-small.png" />
+            </a>
           </div>
 
           <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -126,9 +130,9 @@
             fail because the business becomes product focused and the
             market opportunity isn’t validated.</p>
 
-            <p>Those that grow, explore the opportunity for their
-            product, analyse competitors and alternatives, and use
-            this information in commercial and product strategy.</p>
+            <p>Growing businesses build a commercial and product
+            strategy by exploring the market opportunity, and
+            analysing competitors and alternatives.</p>
 
             <p>This doesn't hinder the fast pace of a startup as
             output is clear and actionable. You will be confident in
@@ -312,6 +316,23 @@
       <script src="assets/js/wow.min.js"></script>
       <script type="text/javascript">
         new WOW().init();
+
+        (function ($) {
+        $(document).ready(function(){
+
+          $(".logo").hide();
+        
+          $(function () {
+            $(window).scroll(function () {
+              if ($(this).scrollTop() > 200) {
+                $(".logo").fadeIn();
+              } else {
+                $(".logo").fadeOut();
+              }
+            });
+          });
+        });
+        }(jQuery));
       </script>
     </body>
 </html>

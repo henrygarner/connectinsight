@@ -43,6 +43,9 @@ a:hover {
 div.nav {
   margin-top: 1em;
 }
+.navbar-default .logo img {
+  margin-top: 6px;
+}
 .navbar-default .navbar-nav > li > a:hover {
   color: #56378c;
 }
@@ -118,4 +121,7 @@ footer i {
 }
 footer i:hover {
   color: #56378c;
+}
+.twitter-timeline {
+  margin-top: 1em;
 }
