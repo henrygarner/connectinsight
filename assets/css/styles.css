@@ -118,6 +118,23 @@ section.client h3,
 .strands .col-lg-4 {
   padding: 0 6em;
 }
+.contact {
+  margin-top: 3em;
+}
+.contact i {
+  min-width: 2em;
+}
+.contact ul {
+  font-size: 1.2em;
+  padding: 1em;
+  list-style-type: none;
+}
+.contact ul a {
+  text-decoration: none;
+}
+.contact ul li {
+  margin-bottom: 0.5em;
+}
 footer {
   background: #bdbdbd;
   background-image: linear-gradient(#eeeeee 0px, #f5f5f5 100%);
