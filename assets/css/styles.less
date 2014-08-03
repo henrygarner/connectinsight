@@ -62,31 +62,30 @@ div.nav {
     margin-top: 1em;
 }
 
-.navbar-default .logo img {
-    margin-top: 6px;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-    color: @purple-color;
-}
-
-.navbar-default .navbar-nav > li > a {
-    font-weight: bold;
+.navbar-default {
+    padding-left: 12px;
+    .logo img {
+        margin-top: 6px;
+    }
+    .navbar-nav > li > a {
+        font-weight: bold;
+        &:hover {
+            color: @purple-color;
+        }
+    }
 }
 
 .nav-pills > li {
     margin-bottom: 4px;
-}
-
-.nav-pills > li > a {
-    font-weight: bold;
-    color: @purple-color;
-    background-color: @light-purple-color;
-}
-
-.nav-pills > li > a:hover {
-    color: white;
-    background-color: @purple-color;
+    & > a {
+        font-weight: bold;
+        color: @purple-color;
+        background-color: @light-purple-color;
+        &:hover {
+            color: white;
+            background-color: @purple-color;
+        }
+    }
 }
 
 section.client, #about {
