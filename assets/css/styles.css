@@ -126,7 +126,7 @@ section.client h3,
 }
 .contact ul {
   font-size: 1.2em;
-  padding: 1em;
+  padding-left: 1em;
   list-style-type: none;
 }
 .contact ul a {
