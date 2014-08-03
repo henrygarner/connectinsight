@@ -148,6 +148,10 @@ footer i {
 footer i:hover {
   color: #56378c;
 }
+.widgets {
+  vertical-align: top;
+}
 .twitter-timeline {
+  max-width: 300px;
   margin-top: 1em;
 }
