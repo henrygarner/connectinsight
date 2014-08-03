@@ -332,6 +332,11 @@
                 $(".logo").fadeIn();
               } else {
                 $(".logo").fadeOut();
+              }        
+            });
+            $('.nav ul.dropdown-menu a').on('click', function(){ 
+              if($('.navbar-toggle').css('display') !='none'){
+                $(".navbar-toggle").trigger( "click" );
               }
             });
           });
