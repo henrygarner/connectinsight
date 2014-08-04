@@ -336,10 +336,9 @@
 
         (function ($) {
         $(document).ready(function(){
-
-          $(".logo").hide();
-        
           $(function () {
+            $(".logo").hide();
+            $(".logo").css("visibility", "visible");
             $(window).scroll(function () {
               if ($(this).scrollTop() > 200) {
                 $(".logo").fadeIn();
