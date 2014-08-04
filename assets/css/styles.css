@@ -47,9 +47,6 @@ a:hover {
 div.nav {
   margin-top: 1em;
 }
-.navbar-default .logo {
-  visibility: hidden;
-}
 .navbar-default .logo img {
   margin-left: 12px;
   margin-top: 6px;
